@@ -41,6 +41,11 @@ app.get('/kwlist', (req ,res)=>{
     });
 });
 
+app.post('/additem', (req ,res)=>{
+    console.log(req.body);
+    res.json({r:'ok'});
+});
+
 app.listen(81, () => {
     console.log(`Server started on port:81`);
 });
