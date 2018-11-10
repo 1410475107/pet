@@ -46,6 +46,10 @@ app.post('/additem', (req ,res)=>{
     res.json({r:'ok'});
 });
 
+app.post('/logout', (req ,res)=>{
+    console.log(req.body);
+    res.json({r:'ok'});
+});
 app.listen(81, () => {
     console.log(`Server started on port:81`);
 });
